@@ -1,0 +1,32 @@
+{
+  "name": "compress-skill",
+  "version": "0.1.0",
+  "description": "Compressed output style for AI coding agents. Fewer tokens, same meaning.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "compress": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "src/",
+    "commands/",
+    "plugins/",
+    "install.sh",
+    "install.ps1",
+    "AGENTS.md",
+    "GEMINI.md",
+    "INSTALL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "install:local": "node bin/install.js",
+    "list": "node bin/install.js --list",
+    "test": "node tests/verify_repo.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "compress",
+  "description": "Compressed output style for Claude Code. Fewer tokens out, smaller context in, same technical accuracy.",
+  "owner": {
+    "name": "YOUR NAME",
+    "url": "https://github.com/YOUR_GITHUB_USER"
+  },
+  "plugins": [
+    {
+      "name": "compress",
+      "description": "Talk less, say the same. Cut output tokens and trim context without losing technical detail.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

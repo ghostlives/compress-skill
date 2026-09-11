@@ -1,0 +1,34 @@
+{
+  "name": "compress",
+  "description": "Compressed output style for Claude Code. Fewer tokens out, smaller context in, same technical accuracy.",
+  "author": {
+    "name": "YOUR NAME",
+    "url": "https://github.com/YOUR_GITHUB_USER"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "HOOK_ROOT=$(printf %s \"${CLAUDE_PLUGIN_ROOT}\" | sed 's|^/\\([a-zA-Z]\\)/|\\1:/|'); node \"$HOOK_ROOT/src/hooks/compress-activate.js\"",
+            "timeout": 30,
+            "statusMessage": "Loading compress mode..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "HOOK_ROOT=$(printf %s \"${CLAUDE_PLUGIN_ROOT}\" | sed 's|^/\\([a-zA-Z]\\)/|\\1:/|'); node \"$HOOK_ROOT/src/hooks/compress-mode-tracker.js\"",
+            "timeout": 30,
+            "statusMessage": "Tracking compress mode..."
+          }
+        ]
+      }
+    ]
+  }
+}
