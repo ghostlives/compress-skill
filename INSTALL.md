@@ -4,20 +4,18 @@
 rules into the agent's config directory, or **`npx skills`**, which copies the skill
 into the agent's skill folder.
 
-Replace `YOUR_GITHUB_USER` with the GitHub account that owns this repository.
-
 ## One command (recommended)
 
 The installer detects which agents you have and installs for them.
 
 **macOS / Linux**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_GITHUB_USER/compress-skill/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ghostlives/compress-skill/main/install.sh | bash
 ```
 
 **Windows (PowerShell)**
 ```powershell
-irm https://raw.githubusercontent.com/YOUR_GITHUB_USER/compress-skill/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/ghostlives/compress-skill/main/install.ps1 | iex
 ```
 
 From a clone, run it directly:
@@ -33,7 +31,7 @@ node bin/install.js --uninstall
 **Plugin install.** Add this repo as a plugin marketplace, then install the plugin:
 
 ```bash
-claude plugin marketplace add YOUR_GITHUB_USER/compress-skill
+claude plugin marketplace add ghostlives/compress-skill
 claude plugin install compress@compress
 ```
 
@@ -66,10 +64,10 @@ The native plugin is copied into `~/.config/opencode/plugins/compress/`, alongsi
 These read skill profiles through the upstream [`skills`](https://github.com/vercel-labs/skills) CLI:
 
 ```bash
-npx skills add YOUR_GITHUB_USER/compress-skill -a cursor
-npx skills add YOUR_GITHUB_USER/compress-skill -a windsurf
-npx skills add YOUR_GITHUB_USER/compress-skill -a cline
-npx skills add YOUR_GITHUB_USER/compress-skill -a github-copilot
+npx skills add ghostlives/compress-skill -a cursor
+npx skills add ghostlives/compress-skill -a windsurf
+npx skills add ghostlives/compress-skill -a cline
+npx skills add ghostlives/compress-skill -a github-copilot
 ```
 
 Optional repo-local always-on rules:
@@ -84,7 +82,7 @@ This writes `.cursor/rules/compress.mdc`, `.windsurf/rules/compress.md`,
 ## Any other agent
 
 ```bash
-npx skills add YOUR_GITHUB_USER/compress-skill -a <profile>
+npx skills add ghostlives/compress-skill -a <profile>
 ```
 
 Check the [`skills`](https://github.com/vercel-labs/skills) README for the profile slug.

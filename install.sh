@@ -10,5 +10,5 @@ if [ -n "$SELF" ] && [ -f "$SELF" ]; then
   fi
 fi
 
-REPO="${COMPRESS_REPO:-YOUR_GITHUB_USER/compress-skill}"
+REPO="${COMPRESS_REPO:-ghostlives/compress-skill}"
 exec npx -y "github:$REPO" -- "$@"

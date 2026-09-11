@@ -19,7 +19,7 @@ const { spawnSync } = require('child_process');
 
 const { readSettings, writeSettings, validateHookFields } = require('./lib/settings.js');
 
-const REPO_SLUG_DEFAULT = 'YOUR_GITHUB_USER/compress-skill';
+const REPO_SLUG_DEFAULT = 'ghostlives/compress-skill';
 const REPO_SLUG = process.env.COMPRESS_REPO || REPO_SLUG_DEFAULT;
 const MARKER = 'compress-';
 const ROOT = path.resolve(__dirname, '..');

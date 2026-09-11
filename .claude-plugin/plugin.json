@@ -2,8 +2,8 @@
   "name": "compress",
   "description": "Compressed output style for Claude Code. Fewer tokens out, smaller context in, same technical accuracy.",
   "author": {
-    "name": "YOUR NAME",
-    "url": "https://github.com/YOUR_GITHUB_USER"
+    "name": "ghostlives",
+    "url": "https://github.com/ghostlives"
   },
   "hooks": {
     "SessionStart": [

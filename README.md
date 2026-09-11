@@ -39,15 +39,13 @@ One command. `compress` detects which agents you have and installs for them.
 
 **macOS / Linux**
 ```bash
-curl -fsSL https://raw.githubusercontent.com/YOUR_GITHUB_USER/compress-skill/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/ghostlives/compress-skill/main/install.sh | bash
 ```
 
 **Windows (PowerShell)**
 ```powershell
-irm https://raw.githubusercontent.com/YOUR_GITHUB_USER/compress-skill/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/ghostlives/compress-skill/main/install.ps1 | iex
 ```
-
-Replace `YOUR_GITHUB_USER` with the account that owns this fork.
 
 ### Per-agent
 
@@ -56,12 +54,12 @@ Replace `YOUR_GITHUB_USER` with the account that owns this fork.
 | Claude Code | Claude Code plugin, or standalone hooks from the installer | Yes — SessionStart hook |
 | Codex | Plugin + `.codex/hooks.json` | Yes |
 | Gemini CLI | Extension with `GEMINI.md` | Yes |
-| Cursor | `npx skills add YOUR_GITHUB_USER/compress-skill -a cursor` | Yes — always-on rule |
-| Windsurf | `npx skills add YOUR_GITHUB_USER/compress-skill -a windsurf` | Yes |
-| Cline | `npx skills add YOUR_GITHUB_USER/compress-skill -a cline` | Yes |
-| GitHub Copilot | `npx skills add YOUR_GITHUB_USER/compress-skill -a github-copilot` | Yes |
+| Cursor | `npx skills add ghostlives/compress-skill -a cursor` | Yes — always-on rule |
+| Windsurf | `npx skills add ghostlives/compress-skill -a windsurf` | Yes |
+| Cline | `npx skills add ghostlives/compress-skill -a cline` | Yes |
+| GitHub Copilot | `npx skills add ghostlives/compress-skill -a github-copilot` | Yes |
 | opencode | Native plugin + `AGENTS.md` | Yes |
-| Others | `npx skills add YOUR_GITHUB_USER/compress-skill -a <profile>` | No — run `/compress` each session |
+| Others | `npx skills add ghostlives/compress-skill -a <profile>` | No — run `/compress` each session |
 
 Full per-agent instructions in [INSTALL.md](./INSTALL.md).
 

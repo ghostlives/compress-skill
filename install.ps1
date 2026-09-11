@@ -11,6 +11,6 @@ if ($Self) {
     }
 }
 
-$Repo = if ($env:COMPRESS_REPO) { $env:COMPRESS_REPO } else { 'YOUR_GITHUB_USER/compress-skill' }
+$Repo = if ($env:COMPRESS_REPO) { $env:COMPRESS_REPO } else { 'ghostlives/compress-skill' }
 & npx -y "github:$Repo" -- @args
 exit $LASTEXITCODE
